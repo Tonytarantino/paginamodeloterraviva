@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+nav {
+    background-color: #F6E9B2;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.menuItem {
+    margin: 10px;
+    padding: 0;
+}
+
+.menuLink {
+    text-decoration: none;
+    color: #0A6847;
+}
+
+
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.parent {
+    display: grid;
+    height: 300px;
+    max-width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 2fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 4;
+    background-color: #0A6847;
+}
+
+.div2 {
+    grid-area: 1 / 4 / 2 / 6;
+    background-color: #7ABA78;
+}
+
+.div3 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: #F3CA52;
+}
+
+.div4 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-color: #7ABA78;
+}
+
+.div5 {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: #F6E9B2;
+}
+
+.div6 {
+    grid-area: 2 / 4 / 3 / 5;
+    background-color: #0A6847;
+}
+
+.div7 {
+    grid-area: 2 / 5 / 3 / 6;
+    background-color: #F3CA52;
+}
+
+.div8 {
+    grid-area: 3 / 1 / 4 / 6;
+    background-color: #0A6847;
+}
+
+.textoGrilla {
+    color: white;
+    font-weight: 500;
+    padding: 30px;
+}
+
+
+ 
+
+/* NUEVA GRILLA CON CONTENIDO */
+
+.parent1 {
+    display: grid;
+    height: 300px;
+    max-width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 2fr 70% 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.divA {
+    grid-area: 1 / 1 / 2 / 4;
+    background-color: #0A6847;
+}
+
+.divB {
+    grid-area: 1 / 4 / 2 / 6;
+    background-color: #7ABA78;
+
+}
+
+.divC {
+    grid-area: 2 / 1 / 3 / 2;
+    /* background-color: #0A6847; */
+    background-image: url(../imagenes/suc1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+
+
+.divD {
+    grid-area: 2 / 2 / 3 / 3;
+    /* background-color: #7ABA78; */
+    background-image: url(../imagenes/suc2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.divE {
+    grid-area: 2 / 3 / 3 / 4;
+    /* background-color: #F6E9B2; */
+    background-image: url(../imagenes/suc3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.divF {
+    grid-area: 2 / 4 / 3 / 5;
+    /* background-color: #0A6847; */
+    background-image: url(../imagenes/suc4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.divG {
+    grid-area: 2 / 5 / 3 / 6;
+    /* background-color: #F3CA52; */
+    background-image: url(../imagenes/suc5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.divH {
+    grid-area: 3 / 1 / 4 / 6;
+    background-color: #0A6847;
+}
+
+@media (max-width: 768px) {
+    .parent1 {
+        display: grid;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 0.4fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .divA {
+        grid-area: 1 / 1 / 2 / 3;
+
+    }
+
+    .divB {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    .divC {
+        grid-area: 3 / 1 / 4 / 2;
+        background-color: transparent;
+        background-image: url(../imagenes/suc1.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: none;
+        margin: 10px;
+    }
+
+    .divD {
+        grid-area: 3 / 2 / 4 / 3;
+        background-color: transparent;
+        background-image: url(../imagenes/suc2.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 10px;
+    }
+
+    .divE {
+        grid-area: 4 / 1 / 5 / 2;
+        background-color: transparent;
+        background-image: url(../imagenes/suc3.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 10px;
+    }
+
+    .divF {
+        grid-area: 4 / 2 / 5 / 3;
+        background-color: transparent;
+        background-image: url(../imagenes/suc4.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 10px;
+    }
+
+    .divG {
+        grid-area: 5 / 1 / 6 / 2;
+        background-color: transparent;
+        background-image: url(../imagenes/suc5.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 10px;
+    }
+
+    .divH {
+        grid-area: 5 / 2 / 6 / 3;
+    }
+    .textoGrilla {
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 10px;
+    }
+}

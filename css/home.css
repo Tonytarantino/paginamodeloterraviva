@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+nav {
+    background-color: #F6E9B2;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    max-width:100% ;
+}
+
+.bx-leaf{
+    color: #0A6847;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    font-size: xx-large;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+
+}
+
+.menuItem {
+    margin: 10px;
+    padding: 0;
+}
+
+.menuLink {
+    text-decoration: none;
+    color: #0A6847;
+}
+
+/* ---PORTADA--- */
+.portada {
+    height: 500px;
+    background-image: url(../imagenes/detail-green-leaf.jpg);
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    font-size: 120px;
+    color: white;
+    font-weight: 200;
+}
+
+.subtitulo {
+    margin: 50px;
+}
+
+
+
+.seccion1 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subSeccion1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.parrafoSeccion1 {
+    display: flex;
+    align-items: center;
+    max-width: 40%;
+    font-size: 30px;
+}
+
+.imgSeccion1 {
+    max-width: 70%;
+}
+
+.seccion2 {
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    background-color: #F6E9B2;
+}
+
+.imagSeccion2 {
+    width: 200px;
+}
+
+.itemSeccion2 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.galeria {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.img1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url(../imagenes/galeria1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img2 {
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url(../imagenes/galeria2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img3 {
+    grid-area: 1 / 3 / 2 / 4;
+    background-image: url(../imagenes/galeria3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img4 {
+    grid-area: 1 / 4 / 2 / 5;
+    background-image: url(../imagenes/galeria4.jpg);
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img5 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(../imagenes/galeria5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img6 {
+    grid-area: 2 / 2 / 3 / 3;
+    background-image: url(../imagenes/galeria6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img7 {
+    grid-area: 2 / 3 / 3 / 4;
+    background-image: url(../imagenes/galeria7.jpg);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img8 {
+    grid-area: 2 / 4 / 3 / 5;
+    background-image: url(../imagenes/galeria8.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seccion4{
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna{
+    text-align: center;
+    margin: 50px;
+}
+
+.subtitulo4{
+    margin: 20px;
+}
+
+footer{
+    background-color: #0A6847;
+    color: #F6E9B2;
+    padding: 20px;
+}
+.footerInfo{
+    margin: 20px;
+}
+
+i{
+margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .portada{
+        height: 200px;
+        width: 100%;
+    }
+    .titulo {
+        font-size: 50px;
+    }
+    .subSeccion1{
+        display: block;
+    }
+    .subtitulo {
+        margin: 20px;
+    }
+    .parrafoSeccion1 {
+        text-align: center;
+        max-width: 90%;
+        font-size: 20px;
+    }
+
+    .seccion2 {
+        height: 600px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: block;
+        padding: 30px;
+        background-color: #F6E9B2;
+    }
+    .imagSeccion2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .menuSeccion2{
+        padding: 0;
+        max-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 0;
+
+    }
+    .itemSeccion2 {
+        margin-top: 20px;
+        font-size: 15px;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    
+.seccion4{
+    display: block;
+}
+.galeria {
+    height: 250px;
+    
+}
+    
+}
